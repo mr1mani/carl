@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back01"
+    tools:context=".SellerEditorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/toolbarRl"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_toolbar01">
+
+            <ImageView
+                android:id="@+id/iconIv"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo_bg"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/toolbarRl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_button02"
+            android:padding="8dp"
+            android:scaleType="fitCenter" />
+
+
+        <TextView
+            android:id="@+id/upload_images_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/image_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/shape_button01"
+            android:text="Upload"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/camera_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/image_view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/shape_button01"
+            android:textColor="@color/white"
+            android:text="Camera"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/item_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/camera_text"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_edittext01"
+            android:textColorHint="@color/gray02"
+            android:paddingLeft="8dp"
+            android:hint="Car Name" />
+
+        <EditText
+            android:id="@+id/item_price_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/item_name_edit_text"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_edittext01"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray02"
+            android:paddingLeft="8dp"
+            android:hint="Car Price" />
+
+        <EditText
+            android:id="@+id/add_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/item_price_edit_text"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_edittext01"
+            android:textColorHint="@color/gray02"
+            android:textColor="@color/black"
+            android:paddingLeft="8dp"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/item_description_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_edit_text"
+            android:layout_margin="16dp"
+            android:gravity="top"
+            android:hint="Description"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:background="@drawable/shape_edittext01"
+            android:textColorHint="@color/gray02"
+            android:paddingLeft="8dp"
+            android:minLines="10" />
+
+        <TextView
+            android:id="@+id/exit_text"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/item_description_edit_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/shape_button01"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="Exit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/submit_text"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/item_description_edit_text"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@id/exit_text"
+            android:background="@drawable/shape_button01"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>

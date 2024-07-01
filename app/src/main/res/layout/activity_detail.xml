@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back01"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbarRl"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_toolbar01">
+
+            <ImageView
+                android:id="@+id/iconIv"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo_bg" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/toolbarRl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_button02"
+            android:padding="8dp"
+            android:scaleType="fitCenter" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cart_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/itemImageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-60dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_cart"
+            android:contentDescription="Cart"
+            app:maxImageSize="35dp" />
+
+        <TextView
+            android:id="@+id/itemHeadingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/cart_text"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_edittext01"
+            android:textColorHint="@color/gray02"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="Car Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itemPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/itemHeadingTextView"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_edittext01"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/gray02"
+            android:paddingLeft="8dp"
+            android:text="Car Price"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/add_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/itemPriceTextView"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_edittext01"
+            android:textColorHint="@color/gray02"
+            android:paddingLeft="8dp"
+            android:hint="Address" />
+
+        <TextView
+            android:id="@+id/itemDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_edit_text"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_edittext01"
+            android:gravity="top"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="10"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray02"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/buy_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/itemDescriptionTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="163dp"
+            android:background="@drawable/shape_button01"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Buy"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/exit_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/itemDescriptionTextView"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/shape_button01"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Exit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
